@@ -1,0 +1,50 @@
+20:56:49.879 [grpc-nio-worker-ELG-3-3] DEBUG io.grpc.netty.NettyServerHandler - [id: 0xed2bbf9b, L:/127.0.0.1:444 - R:/127.0.0.1:63227] OUTBOUND GO_AWAY: lastStreamId=2147483647 errorCode=2 length=16 bytes=436f6e6e656374696f6e207265736574
+20:56:49.880 [grpc-nio-worker-ELG-3-3] DEBUG i.n.h.c.http2.Http2ConnectionHandler - [id: 0xed2bbf9b, L:/127.0.0.1:444 ! R:/127.0.0.1:63227] Sending GOAWAY failed: lastStreamId '2147483647', errorCode '2', debugData 'Connection reset'. Forcing shutdown of the connection.
+java.io.IOException: Connection reset by peer
+	at java.base/sun.nio.ch.SocketDispatcher.writev0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.writev(SocketDispatcher.java:58)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:227)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:158)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:563)
+	at io.netty.channel.socket.nio.NioSocketChannel.doWrite(NioSocketChannel.java:423)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:949)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.flush0(AbstractNioChannel.java:354)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:913)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:750)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:742)
+	at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:728)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler.onError(Http2ConnectionHandler.java:643)
+	at io.grpc.netty.AbstractNettyHandler.exceptionCaught(AbstractNettyHandler.java:94)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:281)
+	at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:273)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.exceptionCaught(DefaultChannelPipeline.java:1377)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:281)
+	at io.netty.channel.DefaultChannelPipeline.fireExceptionCaught(DefaultChannelPipeline.java:907)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.handleReadException(AbstractNioByteChannel.java:125)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:177)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+20:58:53.141 [sbt-bg-threads-1] INFO  lambdaQueryServer - Loaded configuration success
+20:58:53.144 [sbt-bg-threads-1] INFO  scala.main - Starting client for server at 127.0.0.1 127.0.0.1
+20:58:53.175 [sbt-bg-threads-1] DEBUG i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+20:58:53.178 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+20:58:53.179 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - Java version: 18
+20:58:53.180 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+20:58:53.181 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+20:58:53.181 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+20:58:53.182 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+20:58:53.183 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+20:58:53.185 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @20ddcc88
+20:58:53.186 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+20:58:53.187 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+20:58:53.189 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent - maxDirectMemory: 1073741824 bytes (maybe)
+20:58:53.190 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\omarc\AppData\Local\Temp (java.io.tmpdir)

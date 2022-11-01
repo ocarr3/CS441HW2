@@ -1,0 +1,50 @@
+03:55:15.384 [main] DEBUG i.n.util.internal.PlatformDependent - Platform: Windows
+03:55:15.386 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+03:55:15.387 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+03:55:15.388 [main] DEBUG io.netty.util.internal.CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+03:55:15.388 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+03:55:15.605 [main] DEBUG i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 32
+03:55:15.619 [main] DEBUG i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+03:55:15.619 [main] DEBUG i.n.u.i.InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+03:55:15.623 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+03:55:15.623 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+03:55:15.628 [main] DEBUG i.n.util.internal.PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+03:55:15.718 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+03:55:15.718 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+03:55:15.720 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 32
+03:55:15.720 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 32
+03:55:15.720 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+03:55:15.720 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+03:55:15.720 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+03:55:15.720 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+03:55:15.720 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+03:55:15.720 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+03:55:15.720 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+03:55:15.720 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+03:55:15.720 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: true
+03:55:15.720 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+03:55:15.753 [grpc-nio-boss-ELG-1-1] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 14928 (auto-detected)
+03:55:15.755 [grpc-nio-boss-ELG-1-1] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv4Stack: false
+03:55:15.756 [grpc-nio-boss-ELG-1-1] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+03:55:15.765 [grpc-nio-boss-ELG-1-1] DEBUG i.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+03:55:15.765 [grpc-nio-boss-ELG-1-1] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+03:55:15.793 [grpc-nio-boss-ELG-1-1] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: a8:7e:ea:ff:fe:33:5e:1e (auto-detected)
+03:55:15.806 [grpc-nio-boss-ELG-1-1] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+03:55:15.806 [grpc-nio-boss-ELG-1-1] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+03:55:15.807 [grpc-nio-boss-ELG-1-1] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+03:55:15.821 [main] INFO  lambdaQueryServer - Server has stated. Listening on port: 444
+03:55:41.845 [sbt-bg-threads-1] INFO  scala.main - Starting client for server at
+03:55:41.872 [sbt-bg-threads-1] DEBUG i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+03:55:41.876 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+03:55:41.876 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - Java version: 18
+03:55:41.877 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+03:55:41.878 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+03:55:41.879 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+03:55:41.879 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+03:55:41.881 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+03:55:41.882 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @45b5a1af
+03:55:41.883 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+03:55:41.883 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+03:55:41.885 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent - maxDirectMemory: 1073741824 bytes (maybe)
+03:55:41.886 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\omarc\AppData\Local\Temp (java.io.tmpdir)
+03:55:41.887 [sbt-bg-threads-1] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)

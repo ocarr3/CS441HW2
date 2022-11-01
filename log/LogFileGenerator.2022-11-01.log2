@@ -1,0 +1,33 @@
+10:03:33.779 [grpc-default-executor-0] DEBUG io.netty.util.NetUtil - -Djava.net.preferIPv6Addresses: false
+10:03:33.795 [grpc-default-executor-0] DEBUG i.netty.util.NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+10:03:33.797 [grpc-default-executor-0] DEBUG io.netty.util.NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+10:03:33.836 [grpc-default-executor-0] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: a8:7e:ea:ff:fe:33:5e:1e (auto-detected)
+10:03:33.858 [grpc-default-executor-0] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+10:03:33.859 [grpc-default-executor-0] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+10:03:33.859 [grpc-default-executor-0] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+10:03:33.867 [grpc-default-executor-0] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+10:03:33.868 [grpc-default-executor-0] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+10:03:33.869 [grpc-default-executor-0] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+10:03:33.881 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xc021c7e3, L:/127.0.0.1:51017 - R:/127.0.0.1:444] OUTBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+10:03:33.888 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xc021c7e3, L:/127.0.0.1:51017 - R:/127.0.0.1:444] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+10:03:33.906 [grpc-nio-worker-ELG-3-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+10:03:33.906 [grpc-nio-worker-ELG-3-1] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+10:03:33.907 [grpc-nio-worker-ELG-3-1] DEBUG i.n.util.ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@45792967
+10:03:33.955 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0xaf17adb7, L:/127.0.0.1:444 - R:/127.0.0.1:51017] OUTBOUND SETTINGS: ack=false settings={MAX_CONCURRENT_STREAMS=2147483647, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+10:03:33.957 [grpc-nio-worker-ELG-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+10:03:33.957 [grpc-nio-worker-ELG-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+10:03:33.957 [grpc-nio-worker-ELG-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+10:03:33.963 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0xaf17adb7, L:/127.0.0.1:444 - R:/127.0.0.1:51017] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+10:03:33.967 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xc021c7e3, L:/127.0.0.1:51017 - R:/127.0.0.1:444] INBOUND SETTINGS: ack=false settings={MAX_CONCURRENT_STREAMS=2147483647, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+10:03:33.969 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xc021c7e3, L:/127.0.0.1:51017 - R:/127.0.0.1:444] OUTBOUND SETTINGS: ack=true
+10:03:33.971 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0xaf17adb7, L:/127.0.0.1:444 - R:/127.0.0.1:51017] INBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+10:03:33.972 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0xaf17adb7, L:/127.0.0.1:444 - R:/127.0.0.1:51017] OUTBOUND SETTINGS: ack=true
+10:03:33.973 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0xaf17adb7, L:/127.0.0.1:444 - R:/127.0.0.1:51017] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+10:03:33.980 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xc021c7e3, L:/127.0.0.1:51017 - R:/127.0.0.1:444] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+10:03:33.981 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xc021c7e3, L:/127.0.0.1:51017 - R:/127.0.0.1:444] INBOUND SETTINGS: ack=true
+10:03:33.981 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0xaf17adb7, L:/127.0.0.1:444 - R:/127.0.0.1:51017] INBOUND SETTINGS: ack=true
+10:03:33.985 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xc021c7e3, L:/127.0.0.1:51017 - R:/127.0.0.1:444] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:authority: 127.0.0.1:444, :path: /com.hellogrpc.lambdaQuery/checkLogBool, :method: POST, :scheme: http, content-type: application/grpc, te: trailers, user-agent: grpc-java-netty/1.46.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+10:03:33.993 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xc021c7e3, L:/127.0.0.1:51017 - R:/127.0.0.1:444] OUTBOUND DATA: streamId=3 padding=0 endStream=true length=33 bytes=000000001c0a0c32313a30303a30302e303030120c30313a30303a30302e303030
+10:03:34.000 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0xaf17adb7, L:/127.0.0.1:444 - R:/127.0.0.1:51017] INBOUND HEADERS: streamId=3 headers=GrpcHttp2RequestHeaders[:path: /com.hellogrpc.lambdaQuery/checkLogBool, :authority: 127.0.0.1:444, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-java-netty/1.46.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+10:03:34.022 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xc021c7e3, L:/127.0.0.1:51017 - R:/127.0.0.1:444] INBOUND PING: ack=false bytes=1234
+10:03:34.023 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0xc021c7e3, L:/127.0.0.1:51017 - R:/127.0.0.1:444] OUTBOUND PING: ack=true bytes=1234

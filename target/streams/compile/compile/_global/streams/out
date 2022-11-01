@@ -1,0 +1,9 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E049] Reference Error: C:\Users\omarc\Desktop\ScalaAkkagRPC\src\main\scala\lambdaQueryServer.scala:57:16 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m57 |[0m    [33mval[0m [36minvoke[0m: [35mResponse[0m = requests.get([31m"http://httpbin.org/get"[0m, params = Map([31m"key1"[0m -> [31m"value1"[0m))[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                ^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mReference to Response is ambiguous,[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mit is both imported by name by import com.google.rpc.context.AttributeContext.Response[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0mand imported by name subsequently by import requests.Response[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

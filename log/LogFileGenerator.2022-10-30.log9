@@ -1,0 +1,66 @@
+03:55:42.488 [grpc-nio-worker-ELG-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.ratio: 8
+03:55:42.489 [grpc-nio-worker-ELG-3-1] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.chunkSize: 32
+03:55:42.494 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0x60f523cd, L:/127.0.0.1:444 - R:/127.0.0.1:61750] OUTBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+03:55:42.500 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0x60f523cd, L:/127.0.0.1:444 - R:/127.0.0.1:61750] INBOUND SETTINGS: ack=false settings={ENABLE_PUSH=0, MAX_CONCURRENT_STREAMS=0, INITIAL_WINDOW_SIZE=1048576, MAX_HEADER_LIST_SIZE=8192}
+03:55:42.503 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0x60f523cd, L:/127.0.0.1:444 - R:/127.0.0.1:61750] OUTBOUND SETTINGS: ack=true
+03:55:42.504 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0x60f523cd, L:/127.0.0.1:444 - R:/127.0.0.1:61750] INBOUND WINDOW_UPDATE: streamId=0 windowSizeIncrement=983041
+03:55:42.511 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0x60f523cd, L:/127.0.0.1:444 - R:/127.0.0.1:61750] INBOUND SETTINGS: ack=true
+03:55:42.525 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0x60f523cd, L:/127.0.0.1:444 - R:/127.0.0.1:61750] INBOUND HEADERS: streamId=3 headers=GrpcHttp2RequestHeaders[:path: /com.hellogrpc.lambdaQuery/checkLogBool, :authority: 127.0.0.1:444, :method: POST, :scheme: http, te: trailers, content-type: application/grpc, user-agent: grpc-java-netty/1.46.0, grpc-accept-encoding: gzip] streamDependency=0 weight=16 exclusive=false padding=0 endStream=false
+03:55:42.539 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0x60f523cd, L:/127.0.0.1:444 - R:/127.0.0.1:61750] INBOUND DATA: streamId=3 padding=0 endStream=true length=33 bytes=000000001c0a0c30353a30303a30302e303030120c30313a30303a30302e303030
+03:55:42.540 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0x60f523cd, L:/127.0.0.1:444 - R:/127.0.0.1:61750] OUTBOUND PING: ack=false bytes=1234
+03:55:42.541 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x550d8fa7, L:/127.0.0.1:61750 - R:/127.0.0.1:444] INBOUND PING: ack=false bytes=1234
+03:55:42.543 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x550d8fa7, L:/127.0.0.1:61750 - R:/127.0.0.1:444] OUTBOUND PING: ack=true bytes=1234
+03:55:42.544 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0x60f523cd, L:/127.0.0.1:444 - R:/127.0.0.1:61750] INBOUND PING: ack=true bytes=1234
+03:55:42.555 [grpc-default-executor-0] INFO  lambdaQueryServer - Sending HTTP request to API Gateway with paramters of lower time interval: 05:00:00.000 & upper time interval: 01:00:00.000
+03:55:42.558 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0x60f523cd, L:/127.0.0.1:444 - R:/127.0.0.1:61750] OUTBOUND HEADERS: streamId=3 headers=GrpcHttp2OutboundHeaders[:status: 200, content-type: application/grpc, grpc-status: 2] padding=0 endStream=true
+03:55:42.562 [grpc-nio-worker-ELG-1-2] DEBUG io.grpc.netty.NettyClientHandler - [id: 0x550d8fa7, L:/127.0.0.1:61750 - R:/127.0.0.1:444] INBOUND HEADERS: streamId=3 headers=GrpcHttp2ResponseHeaders[:status: 200, content-type: application/grpc, grpc-status: 2] padding=0 endStream=true
+03:55:43.156 [grpc-nio-worker-ELG-3-1] DEBUG io.grpc.netty.NettyServerHandler - [id: 0x60f523cd, L:/127.0.0.1:444 - R:/127.0.0.1:61750] OUTBOUND GO_AWAY: lastStreamId=2147483647 errorCode=2 length=16 bytes=436f6e6e656374696f6e207265736574
+03:55:43.158 [grpc-nio-worker-ELG-3-1] DEBUG i.n.h.c.http2.Http2ConnectionHandler - [id: 0x60f523cd, L:/127.0.0.1:444 ! R:/127.0.0.1:61750] Sending GOAWAY failed: lastStreamId '2147483647', errorCode '2', debugData 'Connection reset'. Forcing shutdown of the connection.
+java.io.IOException: Connection reset by peer
+	at java.base/sun.nio.ch.SocketDispatcher.writev0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.writev(SocketDispatcher.java:58)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:227)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:158)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:563)
+	at io.netty.channel.socket.nio.NioSocketChannel.doWrite(NioSocketChannel.java:423)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush0(AbstractChannel.java:949)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.flush0(AbstractNioChannel.java:354)
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.flush(AbstractChannel.java:913)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.flush(DefaultChannelPipeline.java:1372)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush0(AbstractChannelHandlerContext.java:750)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeFlush(AbstractChannelHandlerContext.java:742)
+	at io.netty.channel.AbstractChannelHandlerContext.flush(AbstractChannelHandlerContext.java:728)
+	at io.netty.handler.codec.http2.Http2ConnectionHandler.onError(Http2ConnectionHandler.java:643)
+	at io.grpc.netty.AbstractNettyHandler.exceptionCaught(AbstractNettyHandler.java:94)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:281)
+	at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:273)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.exceptionCaught(DefaultChannelPipeline.java:1377)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:302)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:281)
+	at io.netty.channel.DefaultChannelPipeline.fireExceptionCaught(DefaultChannelPipeline.java:907)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.handleReadException(AbstractNioByteChannel.java:125)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:177)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+03:59:09.369 [main] INFO  lambdaQueryServer - Loaded configuration success
+03:59:09.403 [main] DEBUG i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+03:59:09.406 [main] DEBUG i.n.util.internal.PlatformDependent0 - -Dio.netty.noUnsafe: false
+03:59:09.406 [main] DEBUG i.n.util.internal.PlatformDependent0 - Java version: 18
+03:59:09.408 [main] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+03:59:09.409 [main] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+03:59:09.409 [main] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+03:59:09.409 [main] DEBUG i.n.util.internal.PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+03:59:09.410 [main] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: available, true
+03:59:09.411 [main] DEBUG i.n.util.internal.PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @f5958c9
+03:59:09.412 [main] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+03:59:09.412 [main] DEBUG i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+03:59:09.421 [main] DEBUG i.n.util.internal.PlatformDependent - maxDirectMemory: 4139778048 bytes (maybe)
+03:59:09.421 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\omarc\AppData\Local\Temp (java.io.tmpdir)
+03:59:09.421 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
