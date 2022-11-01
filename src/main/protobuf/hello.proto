@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.hellogrpc;
+
+service HelloWorld{
+  rpc SayHello(ToBeGreeted) returns (Greeting);
+}
+
+message ToBeGreeted {
+  string person = 1;
+}
+
+message Greeting{
+  string message = 1;
+}
+
